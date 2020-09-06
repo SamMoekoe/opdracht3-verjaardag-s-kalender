@@ -1,7 +1,5 @@
 <?php
 
-header("../index.php");
-
 $servername = 'localhost';
 $database = 'kalender';
 $username = 'root';

@@ -47,7 +47,7 @@
     				<h1><?= $birthday["name"]; ?></h1>
     				<h2><?= $birthday["date"]; ?></h2>
     				<a href="data/edit.php?id=<?= $birthday["id"]; ?>">bewerk</a>
-    				<a href="data/delete.php?id=<? $birthday["id"]; ?>">verwijder</a>
+    				<a href="data/delete.php?id=<?= $birthday["id"]; ?>">verwijder</a>
     			</div>
     		<?php } ?>
     	</div>
