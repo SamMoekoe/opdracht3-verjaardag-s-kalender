@@ -22,7 +22,7 @@ if ($_POST["name"] != "" && $_POST["date"] != "") {
         $stmt->bindParam(":dates", $_POST["date"]);
         $stmt->bindParam(":id", $_GET["id"]);
         $stmt->execute();
- 
+        header('location: ../index.php');
     }
 
     catch(PDOException $e){
@@ -43,7 +43,6 @@ catch(PDOException $e){
 
     echo "Connection failed: " . $e->getMessage();
 }
-
 ?>
 <html lang="en">
 	<head>

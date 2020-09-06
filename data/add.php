@@ -1,5 +1,7 @@
 <?php 
 
+header("../index.php");
+
 $servername = 'localhost';
 $database = 'kalender';
 $username = 'root';
@@ -23,6 +25,7 @@ if ($_POST["name"] != "" && $_POST["date"] != "") {
         $stmt->bindParam(":dates", $_POST["date"]);
  
         $stmt->execute();
+        header('location: ../index.php');
     }
     catch(PDOException $e){
         echo "Connection failed: " . $e->getMessage();
