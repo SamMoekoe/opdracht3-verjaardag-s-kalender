@@ -1,4 +1,5 @@
 <?php
+function OpenDBConn(){
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
@@ -10,4 +11,5 @@
 		catch(PDOException $e){
 			echo "Connection failed: " . $e->getMessage();
 		}
+	}
 ?>

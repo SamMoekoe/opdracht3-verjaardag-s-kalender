@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: url("bg/cake.jpg");
+}
+
+#page {
+	width: 69%; /*nice */
+	background: white;
+	margin: auto;
+	min-height: 100%;
+}
+
+#title {
+	text-align: center;
+	font-size: 4rem;
+	text-decoration: underline;
+}
+
+.card {
+	box-sizing: border-box;
+	width: 40%;
+	margin: 4%;
+	border: 1px grey;
+	display: inline-block;
+	padding: 2rem;
+}
+
+.card h1 {
+	font-size: 3rem;
+	border-bottom: 1px solid grey;
+}
+
+nav {
+	width: 100%;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+#cardCenter {
+	box-sizing: border-box;
+	height: 30vh;
+	width: 40%;
+	margin: 5%;
+	border: 1px solid grey;
+	padding: 1rem;
+	margin: 3rem auto; /*kijk zelfs css weet dat Rem beter is dan Emilia */
+}
